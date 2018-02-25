@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         btnSubmit.setOnClickListener {
             hideKeyboard()
             Toast.makeText( this,  txtMessage.text.toString(), Toast.LENGTH_LONG) .show()
+            txtMessage.setText("")
         }
 
 
